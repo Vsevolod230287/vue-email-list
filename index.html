@@ -14,13 +14,17 @@
 <body style="background-color: red">
 
   <div id="root">
-    <ol>
-      <li v-for="email in emails"> {{ email }}</li>
-    </ol>
 
-    <button @click="addEmails">Premi per avere una lista di 10 email!</button>
+      <div class="row">
+        <div class="col-xs-12 flex center wrap">
+          <button @click="addEmails">Premi per avere una lista di 10 email!</button>
+          <ol>
+            <li v-for="email in emails"> {{ email }}</li>
+          </ol>
 
 
+      </div>
+    </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js" charset="utf-8"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue"></script>

@@ -1121,3 +1121,7 @@
 .space-around {
   justify-content: space-around;
 }
+
+.wrap {
+  flex-wrap: wrap;
+}
